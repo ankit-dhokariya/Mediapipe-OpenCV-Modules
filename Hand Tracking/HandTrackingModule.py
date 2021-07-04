@@ -69,7 +69,7 @@ def main():
         fps = 1 / (currTime - prevTime)
         prevTime = currTime
 
-        cv2.putText(img, str(int(fps)), (10, 70),
+        cv2.putText(img, f"FPS: {int(fps)}", (20, 70),
                     cv2.FONT_HERSHEY_PLAIN, 3, (255, 0, 0), 3)
 
         cv2.imshow("Hand Tracking", img)
